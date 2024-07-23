@@ -11,7 +11,7 @@ export const Admin = () => {
     const [roomId, setRoomId] = useState("");
 
     useEffect(() => {
-        const socket = io("https://sum-server.100xdevs.com");
+        const socket = io("http://localhost:3000/");
         setSocket(socket)
 
         socket.on("connect", () => {
